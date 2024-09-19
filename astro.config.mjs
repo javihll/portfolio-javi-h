@@ -6,5 +6,11 @@ export default defineConfig({
   integrations: [sitemap()],
   output: 'static',
   base: '/portfolio-javi-h/', // El nombre de tu repositorio en GitHub
+  vite: {
+    alias: {
+      '@': '/src',
+    },
+  },
 });
+
 

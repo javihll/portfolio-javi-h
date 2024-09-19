@@ -2,7 +2,7 @@
 import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
 import ProjectCard from '../components/ProjectCard.astro';
-import styles from '../styles/global.css';
+import '/src/components/styles/global.css'
 ---
 
 <html lang="es">
@@ -10,7 +10,7 @@ import styles from '../styles/global.css';
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi Portfolio | Desarrollador de Software</title>
-    <link rel="stylesheet" href={styles} />
+    <link rel="stylesheet" href="../styles/global.css" />
   </head>
   <body>
     <Navbar />
