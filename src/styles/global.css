@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 5rem 1rem;
+    background-color: #282c34;
+    color: #61dafb;
+  }
+  
+  .highlight {
+    color: #f39c12;
+  }
+  
+  .project-grid {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .project-card {
+    background: white;
+    padding: 1.5rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .skills {
+    padding: 2rem;
+    background-color: #61dafb;
+  }
+  
+  .contact {
+    padding: 2rem;
+  }
+  
+  .contact-btn {
+    background-color: #f39c12;
+    padding: 1rem 2rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+  }
+  
+  .social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  

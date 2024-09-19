@@ -1,5 +1,10 @@
-// @ts-check
 import { defineConfig } from 'astro/config';
+import sitemap from '@astrojs/sitemap';
 
-// https://astro.build/config
-export default defineConfig({});
+export default defineConfig({
+  site: 'https://javihll.github.io/portfolio-javi-h/',
+  integrations: [sitemap()],
+  output: 'static',
+  base: '/<portfolio-javi-h>/', // El nombre de tu repositorio en GitHub
+});
+

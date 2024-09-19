@@ -1,16 +1,56 @@
 ---
-
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import ProjectCard from '../components/ProjectCard.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Portfolio | Desarrollador de Software</title>
+    <link rel="stylesheet" href="/styles/global.css" />
+  </head>
+  <body>
+    <Navbar />
+    <main class="hero">
+      <section class="intro">
+        <h1>¡Hola! Soy <span class="highlight">[Tu Nombre]</span></h1>
+        <p>Desarrollador de Software especializado en Angular.</p>
+      </section>
+
+      <section class="projects">
+        <h2>Proyectos</h2>
+        <div class="project-grid">
+          <ProjectCard 
+            title="Proyecto 1"
+            description="Descripción del proyecto."
+            link="https://github.com/"
+          />
+          <ProjectCard 
+            title="Proyecto 2"
+            description="Descripción del proyecto."
+            link="https://github.com/"
+          />
+        </div>
+      </section>
+
+      <section class="skills">
+        <h2>Habilidades</h2>
+        <ul>
+          <li>Angular</li>
+          <li>JavaScript</li>
+          <li>HTML & CSS</li>
+          <li>Node.js</li>
+        </ul>
+      </section>
+
+      <section class="contact">
+        <h2>Contacto</h2>
+        <p>¿Tienes alguna pregunta? ¡No dudes en contactarme!</p>
+        <a href="mailto:tuemail@ejemplo.com" class="contact-btn">Envíame un correo</a>
+      </section>
+    </main>
+    <Footer />
+  </body>
 </html>
